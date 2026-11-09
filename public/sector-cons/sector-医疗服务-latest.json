@@ -1,0 +1,27 @@
+{
+  "sector": "医疗服务",
+  "count": 20,
+  "date": "2026-08-07",
+  "stocks": [
+    {"code": "300363", "name": "博腾股份", "price": 20.44, "change": 20.02, "turnover": 8.52, "amount": 18.6},
+    {"code": "603259", "name": "药明康德", "price": 68.50, "change": 4.81, "turnover": 2.15, "amount": 45.2},
+    {"code": "600272", "name": "开开实业", "price": 18.35, "change": 10.03, "turnover": 12.45, "amount": 3.8},
+    {"code": "002219", "name": "新里程", "price": 2.14, "change": 1.90, "turnover": 3.21, "amount": 2.1},
+    {"code": "688796", "name": "百奥赛图", "price": 130.12, "change": 13.64, "turnover": 5.67, "amount": 8.9},
+    {"code": "300149", "name": "睿智医药", "price": 10.42, "change": 7.53, "turnover": 4.32, "amount": 2.5},
+    {"code": "688238", "name": "和元生物", "price": 6.93, "change": 15.89, "turnover": 6.78, "amount": 3.2},
+    {"code": "301096", "name": "百诚医药", "price": 44.68, "change": 6.79, "turnover": 3.45, "amount": 1.8},
+    {"code": "301333", "name": "诺思格", "price": 56.81, "change": 8.92, "turnover": 4.56, "amount": 2.3},
+    {"code": "002821", "name": "凯莱英", "price": 95.20, "change": 10.01, "turnover": 5.23, "amount": 12.5},
+    {"code": "600721", "name": "百花医药", "price": 12.85, "change": 10.02, "turnover": 8.91, "amount": 4.2},
+    {"code": "688076", "name": "诺泰生物", "price": 58.30, "change": 8.45, "turnover": 4.12, "amount": 5.6},
+    {"code": "300759", "name": "康龙化成", "price": 32.15, "change": 10.08, "turnover": 6.34, "amount": 8.9},
+    {"code": "688131", "name": "皓元医药", "price": 45.60, "change": 9.83, "turnover": 5.67, "amount": 3.4},
+    {"code": "688690", "name": "纳微科技", "price": 28.90, "change": 12.35, "turnover": 7.23, "amount": 4.1},
+    {"code": "688739", "name": "成大生物", "price": 42.15, "change": 6.78, "turnover": 3.89, "amount": 2.8},
+    {"code": "300760", "name": "迈瑞医疗", "price": 285.60, "change": 3.45, "turnover": 1.23, "amount": 35.6},
+    {"code": "688271", "name": "联影医疗", "price": 156.80, "change": 4.56, "turnover": 2.34, "amount": 18.9},
+    {"code": "002007", "name": "华兰生物", "price": 18.90, "change": 5.67, "turnover": 3.45, "amount": 6.7},
+    {"code": "300015", "name": "爱尔眼科", "price": 12.35, "change": 2.89, "turnover": 2.12, "amount": 15.6}
+  ]
+}

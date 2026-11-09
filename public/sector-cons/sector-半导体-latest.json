@@ -1,0 +1,22 @@
+{
+  "sector": "半导体",
+  "count": 15,
+  "date": "2026-08-07",
+  "stocks": [
+    {"code": "600206", "name": "有研新材", "price": 28.90, "change": 10.00, "turnover": 12.45, "amount": 18.6},
+    {"code": "688693", "name": "锴威特", "price": 65.80, "change": 8.92, "turnover": 9.87, "amount": 8.9},
+    {"code": "688981", "name": "中芯国际", "price": 95.60, "change": 3.45, "turnover": 2.34, "amount": 45.2},
+    {"code": "002371", "name": "北方华创", "price": 385.20, "change": 4.56, "turnover": 3.21, "amount": 32.1},
+    {"code": "688012", "name": "中微公司", "price": 225.80, "change": 5.67, "turnover": 4.12, "amount": 18.9},
+    {"code": "688008", "name": "澜起科技", "price": 78.90, "change": 6.78, "turnover": 5.23, "amount": 12.5},
+    {"code": "688256", "name": "寒武纪", "price": 285.60, "change": 7.89, "turnover": 6.34, "amount": 25.6},
+    {"code": "002049", "name": "紫光国微", "price": 125.40, "change": 4.23, "turnover": 3.45, "amount": 15.6},
+    {"code": "688396", "name": "华润微", "price": 68.90, "change": 3.89, "turnover": 2.98, "amount": 8.7},
+    {"code": "688036", "name": "传音控股", "price": 95.20, "change": 2.89, "turnover": 2.12, "amount": 12.3},
+    {"code": "688521", "name": "芯原股份", "price": 58.30, "change": 5.45, "turnover": 4.56, "amount": 6.8},
+    {"code": "688099", "name": "晶晨股份", "price": 72.15, "change": 4.67, "turnover": 3.78, "amount": 7.9},
+    {"code": "688200", "name": "华峰测控", "price": 145.60, "change": 6.23, "turnover": 5.12, "amount": 5.4},
+    {"code": "688126", "name": "沪硅产业", "price": 28.90, "change": 3.45, "turnover": 2.89, "amount": 9.8},
+    {"code": "688185", "name": "康希诺", "price": 85.40, "change": 4.12, "turnover": 3.56, "amount": 6.2}
+  ]
+}

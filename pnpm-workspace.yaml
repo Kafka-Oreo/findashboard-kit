@@ -1,0 +1,8 @@
+allowBuilds:
+  core-js: true
+  esbuild: true
+  sharp: true
+onlyBuiltDependencies:
+  - sharp
+  - esbuild
+  - core-js

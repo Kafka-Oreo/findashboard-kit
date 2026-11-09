@@ -1,0 +1,121 @@
+{
+  "date": "20260907",
+  "events": [
+    {
+      "event_title": "A股收评：创业板指高开高走涨3.41%，CPO、水产、PCB等概念走强",
+      "event_summary": "9月7日A股三大指数走势分化，沪指微涨0.07%报3932.70点，深证成指涨1.91%，创业板指大涨3.41%，科创50涨2.42%；两市成交1.95万亿元，个股涨多跌少（3167家上涨/2196家下跌），涨停95家、跌停仅2家。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866639128.html",
+      "event_time": "2026-09-07 15:00",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "华为时隔六年再次发布高性能芯片，Mate XT2三折叠手机亮相广州",
+      "event_summary": "华为7日在广州发布Mate XT 2三折叠手机，搭载最新麒麟90系列芯片，这是华为时隔六年再次发布高性能芯片，同时HarmonyOS 7正式发布，消息催化消费电子、半导体板块走强。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866641930.html",
+      "event_time": "2026-09-07 15:07",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "3000亿特别国债注资计划落地，债市或交易大行配债能力改善预期",
+      "event_summary": "3000亿元特别国债注资计划正式落地，债市或交易国有大行配债能力改善预期；另有3600亿元金融增资释放稳增长信号，但银行、非银金融板块当日逆势调整。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866639914.html",
+      "event_time": "2026-09-07 15:02",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "机构：三星电子、SK海力士内存库存已不足10天",
+      "event_summary": "机构数据显示三星电子、SK海力士内存库存已不足10天，Q2 DRAM产业营收季增59.5%，供给扩张仍不及需求成长，存储芯片景气度上行，半导体、存储板块走强。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866639673.html",
+      "event_time": "2026-09-07 15:01",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "中信建投：AI芯片电感从2025年到2028年市场规模扩容10倍以上",
+      "event_summary": "中信建投研报指出，随着AI算力需求爆发，AI芯片电感市场规模将从2025年到2028年扩容10倍以上，算力硬件产业链高景气持续，CPO、光模块、PCB板块集体爆发。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866644650.html",
+      "event_time": "2026-09-07 15:14",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "高盛首予中际旭创H股买入评级，目标价3267港元",
+      "event_summary": "高盛恢复覆盖中际旭创A股并首次覆盖中际旭创H股，均给予“买入”评级，H股目标价3267港元；中际旭创当日涨10.38%，光模块龙头领涨算力硬件板块。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866642193.html",
+      "event_time": "2026-09-07 15:06",
+      "event_level": "公司级"
+    },
+    {
+      "event_title": "CPO板块午后再度走高，光迅科技触及涨停、中际旭创涨近10%",
+      "event_summary": "CPO概念股全天爆发，午后板块再度走高，光迅科技触及涨停，中际旭创涨近10%，太辰光涨14.5%，通信板块大涨6.17%居申万一级首位，电子主力资金净流入超460亿元。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866574981.html",
+      "event_time": "2026-09-07 13:22",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "上海出口集装箱结算运价指数（欧洲航线）报2882.69点，较上期跌5.4%",
+      "event_summary": "上海航运交易所公布，上海出口集装箱结算运价指数（欧洲航线）报2882.69点，与上期相比下跌5.4%，航运运价高位回落，航运港口板块当日表现分化。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866642595.html",
+      "event_time": "2026-09-07 15:08",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "商务部：初步认定原产于日本的进口二氯二氢硅存在倾销",
+      "event_summary": "商务部调查机关初步认定，原产于日本的进口二氯二氢硅（半导体电子特气材料）存在倾销，将对相关产业实施贸易救济，利好国产半导体材料替代。",
+      "source_media": "华尔街见闻",
+      "source_url": "https://wallstreetcn.com/livenews/3161165",
+      "event_time": "2026-09-07 15:21",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "外交部：中美双方就人工智能问题保持着沟通",
+      "event_summary": "针对中美未来几周是否将举行人工智能对话，外交部回应称双方就AI问题保持着沟通；同时表示中委石油合作不应受第三方干扰。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866646293.html",
+      "event_time": "2026-09-07 15:20",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "最高法发文明确“AI换脸拟声”等案件裁判规则",
+      "event_summary": "最高人民法院发布司法解释，明确“AI换脸拟声”等利用人工智能技术侵害人格权案件的裁判规则，规范AI内容生成应用，利好合规AI应用及内容产业。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866640946.html",
+      "event_time": "2026-09-07 15:04",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "中哈粮食交易平台正式上线运行",
+      "event_summary": "中哈粮食交易平台正式上线运行，深化中哈农业与粮食贸易合作，利好跨境粮食贸易及农业板块，当日农业、种业、渔业股延续强势。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609073866645653.html",
+      "event_time": "2026-09-07 15:18",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "韩国KOSPI指数涨幅扩大至4%，亚太科技股情绪高涨",
+      "event_summary": "受AI算力硬件景气及半导体板块带动，韩国KOSPI指数盘中涨幅扩大至4%，港股AI硬件持续走强（剑桥科技大涨超22%），亚太市场科技风险偏好显著回升。",
+      "source_media": "东方财富",
+      "source_url": "https://stock.eastmoney.com/a/202609073866531844.html",
+      "event_time": "2026-09-07 12:29",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "伊美相互袭击油轮，欧洲天然气价格走高",
+      "event_summary": "中东地缘局势升温，伊朗与美国相互袭击油轮，欧洲天然气价格走高，国际原油维持91美元/桶上方高位，关注石油石化及能源链条。",
+      "source_media": "东方财富",
+      "source_url": "https://so.eastmoney.com/news/s?keyword=%E4%BC%8A%E6%9C%97%E7%BE%8E%E5%9B%BD%20%E6%B2%B9%E8%BD%AE%20%E5%A4%A9%E7%84%B6%E6%B0%94",
+      "event_time": "2026-09-07 14:53",
+      "event_level": "市场级"
+    }
+  ],
+  "sources": ["东方财富", "华尔街见闻"],
+  "data_status": "verified",
+  "source_status": {},
+  "updated_at": "2026-09-07 21:00:00"
+}

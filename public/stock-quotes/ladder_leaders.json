@@ -1,0 +1,80 @@
+{
+  "003032": {
+    "name": "传智教育",
+    "price": 11.78,
+    "change_pct": 7.58,
+    "full_code": "sz003032"
+  },
+  "605179": {
+    "name": "一鸣食品",
+    "price": 34.67,
+    "change_pct": 9.99,
+    "full_code": "sh605179"
+  },
+  "002827": {
+    "name": "高争民爆",
+    "price": 61.77,
+    "change_pct": 6.32,
+    "full_code": "sz002827"
+  },
+  "002347": {
+    "name": "泰尔股份",
+    "price": 6.28,
+    "change_pct": 0.0,
+    "full_code": "sz002347"
+  },
+  "000068": {
+    "name": "华控赛格",
+    "price": 3.25,
+    "change_pct": 1.25,
+    "full_code": "sz000068"
+  },
+  "600272": {
+    "name": "开开实业",
+    "price": 20.09,
+    "change_pct": 10.02,
+    "full_code": "sh600272"
+  },
+  "300170": {
+    "name": "汉得信息",
+    "price": 17.23,
+    "change_pct": 1.53,
+    "full_code": "sz300170"
+  },
+  "600962": {
+    "name": "国投中鲁",
+    "price": 25.35,
+    "change_pct": -0.82,
+    "full_code": "sh600962"
+  },
+  "601086": {
+    "name": "国芳集团",
+    "price": 10.09,
+    "change_pct": 10.03,
+    "full_code": "sh601086"
+  },
+  "600857": {
+    "name": "宁波中百",
+    "price": 20.76,
+    "change_pct": 3.18,
+    "full_code": "sh600857"
+  },
+  "605005": {
+    "name": "合兴股份",
+    "price": 16.24,
+    "change_pct": 1.18,
+    "full_code": "sh605005"
+  },
+  "002819": {
+    "name": "东方中科",
+    "price": 21.62,
+    "change_pct": -0.18,
+    "full_code": "sz002819"
+  },
+  "603020": {
+    "name": "爱普股份",
+    "price": 10.49,
+    "change_pct": 1.84,
+    "full_code": "sh603020"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T15:30:00+08:00",
+  "data_status": "verified",
+  "total_events": 12,
+  "events": [
+    {
+      "event_title": "A股收评：三大指数涨跌不一，航海装备与煤炭板块涨幅居前",
+      "event_summary": "沪指收涨0.28%报3951.51点重回3950点，深成指涨0.15%，创业板指跌0.14%；但仅32%个股上涨（1794/3642），航海装备、煤炭、航运港口领涨，权重护盘个股普跌，成交1.86万亿缩量1047亿。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869272972.html",
+      "event_time": "2026-09-09 15:00",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "中东局势升级，布伦特原油期货突破每桶100美元",
+      "event_summary": "中东紧张局势升级，布伦特原油自7月24日以来首次触及每桶100美元、日内涨超2%，WTI原油涨近2%报94.7美元；直接催化A股航运港口、煤炭、石油石化、航海装备等能源交运板块走强。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869284095.html",
+      "event_time": "2026-09-09 15:20",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "谷歌计划在芬兰投入至少130亿欧元建设AI设施，为欧洲最大单笔投资",
+      "event_summary": "谷歌计划在芬兰投入至少130亿欧元用于AI基础设施，为其在欧洲最大单笔投资；叠加Q2晶圆代工营收近534.9亿美元、先进制程与AI需求强劲，全球AI算力景气延续，利好算力硬件、光模块、PCB产业链。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869288935.html",
+      "event_time": "2026-09-09 15:28",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "机构：2026年Q2晶圆代工营收接近534.9亿美元，先进制程与AI需求强劲",
+      "event_summary": "机构数据显示第二季晶圆代工营收接近534.9亿美元，先进制程与AI需求持续强劲，半导体制造景气度高企；A股通信设备、元件（PCB）当日主力资金净流入居前。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869287465.html",
+      "event_time": "2026-09-09 15:25",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "铠侠掌门人澄清与SK海力士“联姻”传闻，承诺抑制芯片价格涨势",
+      "event_summary": "铠侠掌门人澄清与SK海力士合并传闻，并承诺将抑制芯片价格涨势；存储芯片涨价预期下板块情绪敏感，关注存储产业链波动。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869291476.html",
+      "event_time": "2026-09-09 15:29",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "北京：超前布局未来通信网络，攻关硅基光电子、芯粒等前沿芯片技术",
+      "event_summary": "北京发布政策，提升高速通信网络能级、超前布局未来通信网络，攻关存算一体芯片、硅基光电子、先进封装与芯粒（Chiplet）、高性能光互联等前沿技术，加快十万卡算力集群建设，推动AI基础模型全球争先。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869272972.html",
+      "event_time": "2026-09-09 15:48",
+      "event_level": "政策"
+    },
+    {
+      "event_title": "英伟达将亮相高盛通讯科技大会，市场密切关注关键议题",
+      "event_summary": "英伟达周四将亮相高盛通讯科技大会，市场密切关注其对AI算力需求、新品路线图及出口政策等关键议题的表态，或影响全球AI硬件链情绪。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869156543.html",
+      "event_time": "2026-09-09 11:26",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "A股午评：沪指涨0.24%，军工、煤炭走强，出版行业大跌",
+      "event_summary": "午盘超3500股下跌，沪指涨0.24%，煤炭、港口航运、军工板块涨幅居前，培育钻石概念表现强势；前期连板高标出版行业大跌退潮，市场呈权重护盘、题材分化格局。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869160162.html",
+      "event_time": "2026-09-09 11:30",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "2026年国家基本医保药品目录预计于11月发布",
+      "event_summary": "谈判竞价协商收官，2026年国家基本医保药品目录预计于11月发布，创新药、医药板块关注政策落地与放量预期。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869222380.html",
+      "event_time": "2026-09-09 13:55",
+      "event_level": "政策"
+    },
+    {
+      "event_title": "OpenAI宣布破解数学界千禧年难题，AI仅用88小时攻克",
+      "event_summary": "OpenAI宣布AI在88小时内攻克一道人类逾90年无解的数学难题，AI推理能力突破引发关注，提振AI应用与算力主题情绪。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609093869156854.html",
+      "event_time": "2026-09-09 11:25",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "日本农林水产省将进口小麦价格上调12%",
+      "event_summary": "据彭博报道，日本农林水产省将进口小麦价格上调12%，全球农产品价格波动或对农业、种业、食品链形成情绪传导，当日农林牧渔链延续活跃。",
+      "source_media": "华尔街见闻",
+      "source_url": "https://wallstreetcn.com/livenews/https://wallstreetcn.com/livenews/3162412",
+      "event_time": "2026-09-09 15:11",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "湖南黄金重大重组涨停，黄金有色、锑概念走强",
+      "event_summary": "湖南黄金首板涨停（重大重组+黄金锑钨+业绩增长），带动有色（锑）、黄金珠宝板块活跃；地缘升级与原油破百背景下贵金属避险需求升温。",
+      "source_media": "东方财富",
+      "source_url": "https://quote.eastmoney.com/sz002155.html",
+      "event_time": "2026-09-09 10:30",
+      "event_level": "公司级"
+    }
+  ]
+}

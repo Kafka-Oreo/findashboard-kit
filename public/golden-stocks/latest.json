@@ -1,0 +1,148 @@
+{
+  "month": "2026-07",
+  "mostWatched": [
+    {
+      "name": "宁德时代",
+      "code": "300750",
+      "broker": "中信证券",
+      "count": 8,
+      "change": 12.5
+    },
+    {
+      "name": "比亚迪",
+      "code": "002594",
+      "broker": "国泰君安",
+      "count": 7,
+      "change": 8.3
+    },
+    {
+      "name": "隆基绿能",
+      "code": "601012",
+      "broker": "华泰证券",
+      "count": 6,
+      "change": 15.2
+    },
+    {
+      "name": "迈瑞医疗",
+      "code": "300760",
+      "broker": "中金公司",
+      "count": 6,
+      "change": 5.8
+    },
+    {
+      "name": "贵州茅台",
+      "code": "600519",
+      "broker": "招商证券",
+      "count": 5,
+      "change": 3.2
+    },
+    {
+      "name": "阳光电源",
+      "code": "300274",
+      "broker": "中信建投",
+      "count": 5,
+      "change": 18.7
+    },
+    {
+      "name": "药明康德",
+      "code": "603259",
+      "broker": "海通证券",
+      "count": 4,
+      "change": 6.5
+    },
+    {
+      "name": "立讯精密",
+      "code": "002475",
+      "broker": "广发证券",
+      "count": 4,
+      "change": 9.1
+    },
+    {
+      "name": "汇川技术",
+      "code": "300124",
+      "broker": "申万宏源",
+      "count": 4,
+      "change": 7.8
+    },
+    {
+      "name": "金山办公",
+      "code": "688111",
+      "broker": "兴业证券",
+      "count": 3,
+      "change": 11.2
+    }
+  ],
+  "topGainers": [
+    {
+      "name": "阳光电源",
+      "code": "300274",
+      "broker": "中信建投",
+      "count": 5,
+      "change": 18.7
+    },
+    {
+      "name": "隆基绿能",
+      "code": "601012",
+      "broker": "华泰证券",
+      "count": 6,
+      "change": 15.2
+    },
+    {
+      "name": "宁德时代",
+      "code": "300750",
+      "broker": "中信证券",
+      "count": 8,
+      "change": 12.5
+    },
+    {
+      "name": "金山办公",
+      "code": "688111",
+      "broker": "兴业证券",
+      "count": 3,
+      "change": 11.2
+    },
+    {
+      "name": "立讯精密",
+      "code": "002475",
+      "broker": "广发证券",
+      "count": 4,
+      "change": 9.1
+    },
+    {
+      "name": "比亚迪",
+      "code": "002594",
+      "broker": "国泰君安",
+      "count": 7,
+      "change": 8.3
+    },
+    {
+      "name": "汇川技术",
+      "code": "300124",
+      "broker": "申万宏源",
+      "count": 4,
+      "change": 7.8
+    },
+    {
+      "name": "药明康德",
+      "code": "603259",
+      "broker": "海通证券",
+      "count": 4,
+      "change": 6.5
+    },
+    {
+      "name": "迈瑞医疗",
+      "code": "300760",
+      "broker": "中金公司",
+      "count": 6,
+      "change": 5.8
+    },
+    {
+      "name": "贵州茅台",
+      "code": "600519",
+      "broker": "招商证券",
+      "count": 5,
+      "change": 3.2
+    }
+  ],
+  "updateTime": "2026-07-24 21:00"
+}

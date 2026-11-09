@@ -1,0 +1,302 @@
+[
+  {
+    "name": "医疗服务",
+    "buy": 8,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 9,
+    "stockCount": 4
+  },
+  {
+    "name": "化学制药",
+    "buy": 7,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 7,
+    "stockCount": 3
+  },
+  {
+    "name": "医疗器械",
+    "buy": 4,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 4,
+    "stockCount": 4
+  },
+  {
+    "name": "饮料乳品",
+    "buy": 2,
+    "increase": 2,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 4,
+    "stockCount": 2
+  },
+  {
+    "name": "化学纤维",
+    "buy": 4,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 4,
+    "stockCount": 1
+  },
+  {
+    "name": "非白酒",
+    "buy": 2,
+    "increase": 2,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 4,
+    "stockCount": 1
+  },
+  {
+    "name": "通信设备",
+    "buy": 3,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 4,
+    "stockCount": 2
+  },
+  {
+    "name": "计算机设备",
+    "buy": 2,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 3,
+    "stockCount": 3
+  },
+  {
+    "name": "半导体",
+    "buy": 3,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 3,
+    "stockCount": 3
+  },
+  {
+    "name": "通用设备",
+    "buy": 2,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 3,
+    "stockCount": 3
+  },
+  {
+    "name": "光伏设备",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 1
+  },
+  {
+    "name": "消费电子",
+    "buy": 1,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "金属新材料",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 1
+  },
+  {
+    "name": "纺织制造",
+    "buy": 0,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 1
+  },
+  {
+    "name": "电网设备",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 1
+  },
+  {
+    "name": "服装家纺",
+    "buy": 1,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "其他电源设备Ⅱ",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "光学光电子",
+    "buy": 1,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "电池",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "汽车零部件",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "化学制品",
+    "buy": 0,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "物流",
+    "buy": 1,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "电力",
+    "buy": 1,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "塑料",
+    "buy": 2,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "工业金属",
+    "buy": 1,
+    "increase": 1,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 2,
+    "stockCount": 2
+  },
+  {
+    "name": "专用设备",
+    "buy": 1,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 1,
+    "stockCount": 1
+  },
+  {
+    "name": "小金属",
+    "buy": 1,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 1,
+    "stockCount": 1
+  },
+  {
+    "name": "化妆品",
+    "buy": 0,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 1,
+    "stockCount": 1
+  },
+  {
+    "name": "元件",
+    "buy": 1,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 1,
+    "stockCount": 1
+  },
+  {
+    "name": "出版",
+    "buy": 0,
+    "increase": 0,
+    "neutral": 0,
+    "reduce": 0,
+    "sell": 0,
+    "total": 1,
+    "stockCount": 1
+  }
+]

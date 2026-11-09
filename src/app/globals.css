@@ -1,0 +1,1070 @@
+@import url('https://fonts.googleapis.cn/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-card-content: var(--card-content);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-sans: "Inter", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, ui-sans-serif, sans-serif;
+  --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-serif: "Noto Serif SC", "Songti SC", "SimSun", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --shadow-2xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/* ============================================
+   Root Variables - Apple Design System
+   浅色模式默认 - 三层背景结构
+   ============================================ */
+:root {
+  /* 四层背景结构 - 每层肉眼可区分 */
+  --background: #F4F7FC;           /* 第一层：Page Background - 高级冷灰蓝 */
+  --page: #F4F7FC;                 /* 页面背景 */
+  --surface: #F8FAFC;              /* 第二层：Section Container - 浅灰蓝 */
+  --surface-secondary: #FFFFFF;    /* 第三层：Card - 纯白 */
+  --card-content: #FFFFFF;         /* 第四层：Card Content - 纯白 */
+
+  /* 文字层级 - 提高对比度 */
+  --text-primary: #1E293B;         /* 一级标题 - 深石板灰 */
+  --text-secondary: #334155;       /* 二级标题 - 石板灰 */
+  --text-muted: #475569;           /* 正文 - 中石板灰 */
+  --text-caption: #64748B;         /* 辅助文字 - 浅石板灰 */
+  --text-label: #94A3B8;           /* 标签 - 更浅石板灰 */
+
+  /* 边框 - 柔和 */
+  --border: rgba(15, 23, 42, 0.06);
+
+  /* 品牌色 - 科技蓝 */
+  --primary: #2563EB;              /* 科技蓝 - 按钮、高亮、进度条 */
+  --primary-hover: #1D4ED8;        /* 深蓝 - 悬停态 */
+
+  /* 语义色 - 金融专业色 */
+  --danger: #DC2626;               /* 柔和红 - 下跌 */
+  --success: #16A34A;              /* 专业绿 - 上涨 */
+  --warning: #F59E0B;              /* 琥珀色 - 警告 */
+
+  /* 阴影 - 蓝灰轻阴影 */
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 12px 32px rgba(15, 23, 42, 0.08);
+
+  /* shadcn/ui 兼容变量 */
+  --foreground: var(--text-primary);
+  --card: var(--surface-secondary);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface-secondary);
+  --popover-foreground: var(--text-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface);
+  --secondary-foreground: var(--text-secondary);
+  --muted: var(--surface);
+  --muted-foreground: var(--text-caption);
+  --accent: var(--primary);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--danger);
+  --input: var(--border);
+  --ring: var(--primary);
+  --chart-1: var(--primary);
+  --chart-2: var(--success);
+  --chart-3: var(--warning);
+  --chart-4: #af52de;
+  --chart-5: var(--danger);
+  --radius: 16px;
+
+  /* Sidebar */
+  --sidebar: var(--surface-secondary);
+  --sidebar-foreground: var(--text-primary);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--surface);
+  --sidebar-accent-foreground: var(--text-secondary);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--primary);
+}
+
+/* ============================================
+   Dark Mode - Apple Design System
+   纯黑背景 + 近深灰卡片
+   ============================================ */
+.dark {
+  /* 四层背景结构 - 深色模式 */
+  --background: #000000;           /* 第一层：Page Background - 纯黑 */
+  --page: #000000;                 /* 页面背景 */
+  --surface: #1c1c1e;              /* 第二层：Section Container - 深灰 */
+  --surface-secondary: #2c2c2e;    /* 第三层：Card - 中灰 */
+  --card-content: #3a3a3c;         /* 第四层：Card Content - 浅灰 */
+
+  /* 文字层级 */
+  --text-primary: #f5f5f7;
+  --text-secondary: #d1d1d6;
+  --text-muted: #8e8e93;
+
+  /* 边框 */
+  --border: #38383a;
+
+  /* 品牌色 - 科技蓝 */
+  --primary: #3B82F6;              /* 科技蓝 - 深色模式稍亮 */
+  --primary-hover: #60A5FA;        /* 亮蓝 - 悬停态 */
+
+  /* 语义色 - 金融专业色 */
+  --danger: #EF4444;               /* 柔和红 - 下跌 */
+  --success: #22C55E;              /* 专业绿 - 上涨 */
+  --warning: #F59E0B;              /* 琥珀色 - 警告 */
+
+  /* shadcn/ui 兼容变量 */
+  --foreground: var(--text-primary);
+  --card: var(--surface-secondary);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface-secondary);
+  --popover-foreground: var(--text-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface);
+  --secondary-foreground: var(--text-secondary);
+  --muted: var(--surface);
+  --muted-foreground: var(--text-caption);
+  --accent: var(--primary);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--danger);
+  --input: var(--border);
+  --ring: var(--primary);
+  --chart-1: var(--primary);
+  --chart-2: var(--success);
+  --chart-3: var(--warning);
+  --chart-4: #bf5af2;
+  --chart-5: var(--danger);
+
+  /* Sidebar */
+  --sidebar: var(--surface-secondary);
+  --sidebar-foreground: var(--text-primary);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--surface);
+  --sidebar-accent-foreground: var(--text-secondary);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--primary);
+}
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   投资事件数据库 - Financial Terminal Design
+   ============================================ */
+.cal-section {
+  background-color: #F7F8FA;
+}
+.dark .cal-section {
+  background-color: #09090B;
+}
+
+.cal-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+.dark .cal-title {
+  color: #F4F4F5;
+}
+
+.cal-nav-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  transition: background-color 0.15s;
+}
+.cal-nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.dark .cal-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.cal-month-text {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+.dark .cal-month-text {
+  color: #F4F4F5;
+}
+
+.cal-weekday {
+  font-size: 13px;
+  font-weight: 500;
+  color: #94A3B8;
+  text-align: center;
+  padding: 8px 0;
+}
+.dark .cal-weekday {
+  color: #71717A;
+}
+
+/* 有事件的日期卡片 */
+.cal-card {
+  aspect-ratio: 1;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+}
+.cal-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+.dark .cal-card {
+  background: #18181B;
+  border: 1px solid #27272A;
+}
+.dark .cal-card:hover {
+  border-color: #3B82F6;
+  box-shadow: none;
+}
+
+/* 选中状态 */
+.cal-card-selected {
+  background: #EFF6FF;
+  border: 2px solid #2563EB;
+}
+.cal-card-selected:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.1);
+}
+.dark .cal-card-selected {
+  background: #172554;
+  border: 2px solid #3B82F6;
+}
+.dark .cal-card-selected:hover {
+  box-shadow: none;
+}
+
+/* 今日 */
+.cal-card-today {
+  background: #2563EB;
+  border: 2px solid #2563EB;
+  color: white;
+}
+.dark .cal-card-today {
+  background: #1D4ED8;
+  border: 2px solid #3B82F6;
+}
+
+/* 空白日期 */
+.cal-card-empty {
+  background: #FAFBFC;
+  border: 1px solid #F0F2F5;
+  cursor: default;
+}
+.cal-card-empty:hover {
+  box-shadow: none;
+}
+.dark .cal-card-empty {
+  background: #121214;
+  border: 1px solid #202023;
+}
+.dark .cal-card-empty:hover {
+  border-color: #202023;
+  box-shadow: none;
+}
+
+/* 分类 Badge */
+.cal-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 6px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.cal-badge-macro { background: #DBEAFE; color: #1D4ED8; }
+.dark .cal-badge-macro { background: #172554; color: #93C5FD; }
+.cal-badge-policy { background: #EDE9FE; color: #6D28D9; }
+.dark .cal-badge-policy { background: #2E1065; color: #C4B5FD; }
+.cal-badge-earnings { background: #FFEDD5; color: #C2410C; }
+.dark .cal-badge-earnings { background: #431407; color: #FDBA74; }
+.cal-badge-industry { background: #DCFCE7; color: #15803D; }
+.dark .cal-badge-industry { background: #052E16; color: #86EFAC; }
+.cal-badge-meeting { background: #F1F5F9; color: #475569; }
+.dark .cal-badge-meeting { background: #27272A; color: #A1A1AA; }
+.cal-badge-today { background: rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); }
+
+/* 筛选器 - Segmented Control */
+.cal-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 12px;
+  background: #F1F5F9;
+}
+.dark .cal-filter-bar {
+  background: #1F1F23;
+}
+.cal-filter-btn {
+  padding: 6px 14px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.15s;
+  color: #64748B;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.cal-filter-btn:hover {
+  color: #111827;
+}
+.dark .cal-filter-btn {
+  color: #A1A1AA;
+}
+.dark .cal-filter-btn:hover {
+  color: #F4F4F5;
+}
+.cal-filter-btn-active {
+  background: #2563EB;
+  color: white;
+}
+.cal-filter-btn-active:hover {
+  color: white;
+}
+.dark .cal-filter-btn-active {
+  background: #3B82F6;
+  color: white;
+}
+
+/* 滑杆 */
+.cal-slider-track {
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: #E5E7EB;
+  position: relative;
+}
+.dark .cal-slider-track {
+  background: #27272A;
+}
+.cal-slider-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2563EB;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dark .cal-slider-thumb {
+  background: #3B82F6;
+}
+
+/* 星级 */
+.cal-stars {
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.cal-stars-critical { color: #EF4444; }
+.cal-stars-high { color: #F97316; }
+.cal-stars-medium { color: #2563EB; }
+.cal-stars-low { color: #D1D5DB; }
+.dark .cal-stars-low { color: #3F3F46; }
+
+/* 底部图例分割线 */
+.cal-legend-border {
+  border-top: 1px solid #E5E7EB;
+}
+.dark .cal-legend-border {
+  border-top: 1px solid #27272A;
+}
+
+/* 重要性滑杆 */
+
+/* ============================================
+   Light Mode - Apple Design System
+   三层背景 + 高级卡片 + 字体层级
+   ============================================ */
+.light {
+  /* 三层背景结构 */
+  --background: #F5F7FA;
+  --surface: #FAFBFC;
+  --surface-secondary: #FFFFFF;
+
+  /* 文字层级 - 提高对比度 */
+  --text-primary: #111827;
+  --text-secondary: #1F2937;
+  --text-muted: #374151;
+  --text-caption: #6B7280;
+  --text-label: #9CA3AF;
+
+  /* 边框 - 柔和 */
+  --border: rgba(15, 23, 42, 0.06);
+
+  /* 品牌色 */
+  --primary: #0066cc;
+  --primary-hover: #0052a3;
+
+  /* 语义色 */
+  --danger: #ff3b30;
+  --success: #34c759;
+  --warning: #ff9500;
+
+  /* 阴影 */
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+/* 主体背景：三层结构第一层 */
+.light body {
+  background-color: var(--background) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 卡片容器：纯白 + 柔和阴影 + 圆角 */
+.light [class*="bg-[#0a0e17]"],
+.light [class*="bg-[#111827]"],
+.light [class*="bg-[#1e293b]"],
+.light [class*="bg-[#0f172a]"],
+.light [class*="bg-[#1a2332]"] {
+  background-color: var(--surface-secondary) !important;
+  box-shadow: var(--shadow-card) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* 半透明深色背景 → 纯白卡片 */
+.light [class*="bg-[#1e293b]/50"],
+.light [class*="bg-[#111827]/50"],
+.light [class*="bg-[#0a0e17]/50"] {
+  background-color: var(--surface-secondary) !important;
+}
+
+/* Apple 文字层级映射 - 提高对比度 */
+/* 一级标题 */
+.light [class*="text-[#e2e8f0]"],
+.light [class*="text-[#c8d6e5]"] {
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+}
+
+/* 二级标题 */
+.light [class*="text-[#94a3b8]"],
+.light [class*="text-[#cbd5e1]"] {
+  color: var(--text-secondary) !important;
+  font-weight: 600 !important;
+}
+
+/* 正文 */
+.light [class*="text-[#64748b]"],
+.light [class*="text-[#475569]"] {
+  color: var(--text-muted) !important;
+  font-weight: 400 !important;
+}
+
+/* 辅助文字 */
+.light [class*="text-[#9ca3af]"] {
+  color: var(--text-caption) !important;
+}
+
+/* Apple 边框 - 柔和 */
+.light [class*="border-[#1e293b]"],
+.light [class*="border-[#334155]"],
+.light [class*="border-[#0f172a]"] {
+  border-color: var(--border) !important;
+}
+
+.light [class*="border-[#1e293b]/50"] {
+  border-color: var(--border) !important;
+}
+
+/* 悬停态 - 轻微上浮 + 阴影增强 */
+.light [class*="hover:bg-[#1e293b]/50"]:hover,
+.light [class*="hover:bg-[#334155]"]:hover {
+  background-color: var(--surface) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover) !important;
+  transition: all 200ms ease;
+}
+
+/* 精确类名覆盖 */
+.light .bg-\[\#0a0e17\],
+.light .bg-\[\#111827\],
+.light .bg-\[\#1e293b\] {
+  background-color: var(--surface-secondary) !important;
+  box-shadow: var(--shadow-card) !important;
+  border-radius: 16px !important;
+}
+
+.light .text-\[\#c8d6e5\],
+.light .text-\[\#e2e8f0\] {
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+}
+
+.light .text-\[\#94a3b8\] {
+  color: var(--text-secondary) !important;
+  font-weight: 600 !important;
+}
+
+.light .border-\[\#1e293b\],
+.light .border-\[\#334155\] {
+  border-color: var(--border) !important;
+}
+
+/* ============================================
+   Light Mode Apple 增强
+   ============================================ */
+
+/* 输入框 - Apple pill 风格 */
+.light input,
+.light textarea,
+.light select {
+  background-color: var(--surface-secondary) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: 9999px !important;
+}
+
+.light input:focus,
+.light textarea:focus,
+.light select:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgb(0 102 204 / 0.12) !important;
+}
+
+/* 滚动条 - Apple 风格 */
+.light ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: var(--surface);
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: var(--text-caption);
+}
+
+/* 选中态 - Apple Blue */
+.light ::selection {
+  background-color: rgb(0 102 204 / 0.2);
+  color: var(--text-primary);
+}
+
+/* ============================================
+   Light Mode: 语义化颜色覆盖
+   ============================================ */
+
+/* 警告/风险提示区块 - 浅黄色背景 */
+.light [class*="bg-[#422006]"] {
+  background-color: rgb(255 149 10 / 0.08) !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  border: 1px solid rgb(255 149 10 / 0.2) !important;
+}
+
+.light [class*="bg-[#1e3a5f]"] {
+  background-color: rgb(0 102 204 / 0.06) !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  border: 1px solid rgb(0 102 204 / 0.15) !important;
+}
+
+/* 警告边框 */
+.light [class*="border-[#f59e0b]/20"],
+.light [class*="border-[#f59e0b]"] {
+  border-color: rgb(255 149 10 / 0.3) !important;
+}
+
+.light [class*="border-[#3b82f6]/20"],
+.light [class*="border-[#3b82f6]"] {
+  border-color: rgb(0 102 204 / 0.25) !important; /* Apple Action Blue */
+}
+
+.light [class*="border-[#1e3a5f]"] {
+  border-color: rgb(0 102 204 / 0.2) !important;
+}
+
+/* 金色/黄色文字 - Apple 风格调整为暖橙色 */
+.light [class*="text-[#fbbf24]"],
+.light [class*="text-[#f59e0b]"] {
+  color: #ff9500 !important; /* Apple 橙色 */
+}
+
+/* 蓝色文字/链接 - Apple Action Blue */
+.light [class*="text-[#60a5fa]"],
+.light [class*="text-[#3b82f6]"] {
+  color: #0066cc !important; /* Apple Action Blue */
+}
+
+.light [class*="text-[#93c5fd]"] {
+  color: #0077ed !important;
+}
+
+/* 蓝色背景按钮/标签 */
+.light [class*="bg-[#1e3a5f]/30"]:hover {
+  background-color: rgb(0 102 204 / 0.1) !important;
+}
+
+/* 表格中的深色背景单元格 */
+.light [class*="bg-[#1e293b]/50"] {
+  background-color: var(--surface) !important; /* Apple 次级灰 */
+}
+
+/* 涨/跌颜色（A股红涨绿跌 - Apple 适配） */
+.light [class*="text-[#ef4444]"] {
+  color: #ff3b30 !important; /* Apple 红色 */
+}
+
+.light [class*="text-[#22c55e]"] {
+  color: #34c759 !important; /* Apple 绿色 */
+}
+
+.light [class*="bg-[#ef4444]"] {
+  background-color: #ff3b30 !important;
+}
+
+.light [class*="bg-[#22c55e]"] {
+  background-color: #34c759 !important;
+}
+
+/* 灰色文字的层级处理 - Apple 灰 */
+.light [class*="text-[#475569]"] {
+  color: var(--text-caption) !important; /* Apple 灰色 */
+}
+
+/* 确保 sticky 列在浅色模式下有背景 */
+.light .sticky[class*="bg-[#111827]"] {
+  background-color: var(--surface-secondary) !important;
+}
+
+/* ============================================
+   Dark Mode: 语义化颜色覆盖
+   ============================================ */
+
+/* 深色模式下的强调色使用 Apple Sky Link Blue */
+.dark [class*="text-[#3b82f6]"],
+.dark [class*="text-[#60a5fa]"] {
+  color: #2997ff !important;
+}
+
+/* 深色模式下的涨跌色 */
+.dark [class*="text-[#ef4444]"] {
+  color: #ff453a !important; /* Apple 红色 */
+}
+
+.dark [class*="text-[#22c55e]"] {
+  color: #30d158 !important; /* Apple 绿色 */
+}
+
+.dark [class*="bg-[#ef4444]"] {
+  background-color: #ff453a !important;
+}
+
+.dark [class*="bg-[#22c55e]"] {
+  background-color: #30d158 !important;
+}
+
+/* 深色模式下的金色/黄色 */
+.dark [class*="text-[#fbbf24]"],
+.dark [class*="text-[#f59e0b]"] {
+  color: #ff9f0a !important; /* Apple 黄色 */
+}
+
+/* ============================================
+   Light Mode: 更多硬编码颜色覆盖
+   ============================================ */
+
+/* 其他深色背景 */
+.light [class*="bg-[#1a0a0a]"],
+.light [class*="bg-[#1a1505]"],
+.light [class*="bg-[#3b0d0d]"],
+.light [class*="bg-[#064e3b]"],
+.light [class*="bg-[#422006]"] {
+  background-color: rgb(0 0 0 / 0.04) !important;
+}
+
+/* 其他深色边框 */
+.light [class*="border-[#7f1d1d]"],
+.light [class*="border-[#065f46]"],
+.light [class*="border-[#78350f]"] {
+  border-color: rgb(0 0 0 / 0.1) !important;
+}
+
+/* 其他文字颜色 */
+.light [class*="text-[#f87171]"] {
+  color: #ff3b30 !important;
+}
+
+.light [class*="text-[#34d399]"] {
+  color: #34c759 !important;
+}
+
+.light [class*="text-[#cbd5e1]"] {
+  color: var(--text-primary) !important;
+}
+
+.light [class*="text-[#9ca3af]"] {
+  color: var(--text-caption) !important;
+}
+
+/* 其他背景色 */
+.light [class*="bg-[#0f172a]"] {
+  background-color: var(--surface-secondary) !important;
+}
+
+.light [class*="bg-[#f1f5f9]"] {
+  background-color: var(--surface) !important;
+}
+
+/* 确保所有深色背景在浅色模式下都是白色/浅色 */
+.light [class*="bg-[#0a0e17]"],
+.light [class*="bg-[#111827]"],
+.light [class*="bg-[#1e293b]"],
+.light [class*="bg-[#0f172a]"],
+.light [class*="bg-[#1a2332]"] {
+  background-color: var(--surface-secondary) !important;
+  box-shadow: var(--shadow-card) !important;
+  border-radius: 16px !important;
+}
+
+/* 半透明深色背景 */
+.light [class*="bg-[#1e293b]/50"],
+.light [class*="bg-[#111827]/50"],
+.light [class*="bg-[#0a0e17]/50"],
+.light [class*="bg-[#0f172a]/50"] {
+  background-color: var(--surface) !important;
+}
+
+/* 确保表格行背景 */
+.light [class*="bg-[#1e293b]/30"] {
+  background-color: var(--background) !important;
+}
+
+/* 悬停态 - 轻微上浮 + 阴影增强 */
+.light [class*="hover:bg-[#1e293b]/50"]:hover,
+.light [class*="hover:bg-[#334155]"]:hover,
+.light [class*="hover:bg-[#111827]"]:hover {
+  background-color: var(--surface) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover) !important;
+  transition: all 200ms ease;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+
+  }
+}
+
+/* Ripple animation for TOC items */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Modal animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ============================================
+   数字字体 - 等宽数字 + 加粗
+   用于金额、百分比、指数等关键数字
+   ============================================ */
+.font-data {
+  font-family: "SF Pro Display", "Roboto", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   导出模式（.exporting）
+   - 隐藏所有 [data-export-hide] 节点
+   - 显示 [data-export-header]
+   - 冻结动画/过渡
+   - 强制桌面宽度，保证双栏布局
+   ============================================ */
+.exporting [data-export-hide] {
+  display: none !important;
+}
+
+.exporting [data-export-header] {
+  display: block !important;
+}
+
+/* 导出时确保报告容器宽度稳定 */
+.exporting #report-export-root {
+  width: 920px !important;
+  max-width: 920px !important;
+  margin: 0 auto !important;
+  overflow: visible !important;
+}
+
+/* 冻结动画与过渡，避免截图瞬间出现中间态 */
+.exporting,
+.exporting *,
+.exporting *::before,
+.exporting *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+/* ECharts 等 canvas 元素确保不被压缩 */
+.exporting canvas {
+  max-width: none !important;
+}
+
+/* ===== 导出尺寸适配：平板横版（保持原版布局，只缩宽度） ===== */
+.exporting.export-tablet #report-export-root {
+  width: 720px !important;
+  max-width: 720px !important;
+}
+
+/* ===== 导出尺寸适配：手机竖版 ===== */
+/* 手机：单列垂直堆叠，文字自动换行，杜绝重叠溢出 */
+/* 只调整排版，不改颜色和业务数据样式 */
+.exporting.export-mobile #report-export-root {
+  width: 480px !important;
+  max-width: 480px !important;
+  padding: 0 12px !important;
+  font-size: 13px;
+}
+
+/* 手机：所有两栏/多栏全部改为单栏 */
+.exporting.export-mobile #report-export-root .grid-cols-2,
+.exporting.export-mobile #report-export-root .grid-cols-3,
+.exporting.export-mobile #report-export-root [class*="grid-cols-"] {
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+}
+
+.exporting.export-mobile #report-export-root .flex-row {
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.exporting.export-mobile #report-export-root .flex-row > * {
+  width: 100% !important;
+}
+
+/* 手机：字号整体缩小 */
+.exporting.export-mobile #report-export-root .text-sm {
+  font-size: 12px !important;
+}
+
+.exporting.export-mobile #report-export-root .text-xs {
+  font-size: 11px !important;
+}
+
+.exporting.export-mobile #report-export-root .text-lg {
+  font-size: 16px !important;
+}
+
+.exporting.export-mobile #report-export-root .text-xl {
+  font-size: 18px !important;
+}
+
+.exporting.export-mobile #report-export-root .text-2xl {
+  font-size: 20px !important;
+}
+
+.exporting.export-mobile #report-export-root .text-3xl {
+  font-size: 24px !important;
+}
+
+/* 手机：内边距减小 */
+.exporting.export-mobile #report-export-root .p-6 {
+  padding: 12px !important;
+}
+
+.exporting.export-mobile #report-export-root .p-4 {
+  padding: 10px !important;
+}
+
+.exporting.export-mobile #report-export-root .gap-6 {
+  gap: 12px !important;
+}
+
+.exporting.export-mobile #report-export-root .gap-4 {
+  gap: 10px !important;
+}
+
+/* 手机：卡片间距减小 */
+.exporting.export-mobile #report-export-root .space-y-6 > * + * {
+  margin-top: 12px !important;
+}
+
+.exporting.export-mobile #report-export-root .space-y-4 > * + * {
+  margin-top: 10px !important;
+}
+
+/* 手机：图表高度降低 */
+.exporting.export-mobile #report-export-root [class*="h-80"],
+.exporting.export-mobile #report-export-root [style*="height: 320px"] {
+  height: 200px !important;
+}
+
+.exporting.export-mobile #report-export-root [class*="h-64"],
+.exporting.export-mobile #report-export-root [style*="height: 256px"] {
+  height: 180px !important;
+}
+
+/* 手机：表格字号缩小，避免溢出 */
+.exporting.export-mobile #report-export-root table {
+  font-size: 11px !important;
+}
+
+.exporting.export-mobile #report-export-root table td,
+.exporting.export-mobile #report-export-root table th {
+  padding: 4px 6px !important;
+}
+
+/* 手机：连板表格简化显示 */
+.exporting.export-mobile #report-export-root [class*="limit-up"] table td:nth-child(n+5),
+.exporting.export-mobile #report-export-root [class*="limit-up"] table th:nth-child(n+5) {
+  display: none;
+}
+
+/* 手机：全局文字自动换行，杜绝溢出重叠 */
+.exporting.export-mobile #report-export-root {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.exporting.export-mobile #report-export-root p,
+.exporting.export-mobile #report-export-root span,
+.exporting.export-mobile #report-export-root div {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal !important;
+}
+
+/* 手机：禁止单行截断导致的文字缺失/重叠 */
+.exporting.export-mobile #report-export-root .truncate,
+.exporting.export-mobile #report-export-root .text-ellipsis,
+.exporting.export-mobile #report-export-root .overflow-hidden {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* 手机：flex 元素自动换行，避免水平溢出 */
+.exporting.export-mobile #report-export-root .flex {
+  flex-wrap: wrap;
+}
+
+/* 手机：绝对定位的 badge/标签确保不溢出 */
+.exporting.export-mobile #report-export-root .absolute {
+  max-width: 100%;
+  word-break: break-word;
+}
+
+/* 手机：标题强制换行（长标题不溢出） */
+.exporting.export-mobile #report-export-root h1,
+.exporting.export-mobile #report-export-root h2,
+.exporting.export-mobile #report-export-root h3 {
+  white-space: normal !important;
+  word-break: break-word;
+  line-height: 1.3;
+}
+

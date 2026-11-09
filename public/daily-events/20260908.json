@@ -1,0 +1,77 @@
+{
+  "date": "20260908",
+  "sources": [
+    "东方财富",
+    "华尔街见闻",
+    "Wind"
+  ],
+  "data_status": "verified",
+  "source_status": {},
+  "updated_at": "2026-09-08 21:00:00",
+  "events": [
+    {
+      "event_title": "A股收评：沪指涨0.20%报3940.55点，石油石化领涨，科技成长高低切换",
+      "event_summary": "9月8日A股走势分化，沪指收涨0.20%报3940.55点重回3940点，深证成指跌0.52%，创业板指跌1.15%，科创50跌1.52%；两市成交1.96万亿元，涨停73家、跌停0家，最高4板。石油石化、房地产、钢铁、化工等周期低估值板块领涨，昨日强势的电子、计算机、电力设备等科技成长高位回落。",
+      "source_media": "东方财富",
+      "source_url": "https://so.eastmoney.com/news/s?keyword=A%E8%82%A1%E6%94%B6%E8%AF%84%20%E6%B2%AA%E6%8C%87%E6%B6%A80.20%25",
+      "event_time": "2026-09-08 15:00",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "国际油价大涨，NYMEX原油涨3.29%报94.49美元/桶创阶段新高",
+      "event_summary": "受供给担忧及地缘因素推动，NYMEX原油期货大涨3.29%报94.49美元/桶，创阶段新高。受此催化，A股石油石化板块大涨3.68%居申万一级行业首位，采掘、油服、炼化产业链走强，煤炭、化工等资源品同步活跃。",
+      "source_media": "华尔街见闻",
+      "source_url": "https://wallstreetcn.com/news/global",
+      "event_time": "2026-09-08 14:30",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "石油石化板块涨3.68%居申万一级首位，60日BIAS达+10.81%",
+      "event_summary": "Wind数据显示，9月8日石油石化行业以3.68%涨幅居申万一级行业首位，其60日BIAS乖离率达+10.81%（★★），处于相对高位。国际油价走高叠加能源安全预期，油气、炼化方向资金关注度高。",
+      "source_media": "Wind",
+      "source_url": "https://quote.eastmoney.com/center/boardlist.html#boards-BK0464",
+      "event_time": "2026-09-08 15:05",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "房地产板块涨2.09%、钢铁涨2.07%，地产链低位反弹",
+      "event_summary": "9月8日房地产板块大涨2.09%，涨停方向分布中房地产开发达3只；钢铁涨2.07%、建材等地产产业链走强，属于低估值权重板块的超跌修复，市场呈高低切换格局。",
+      "source_media": "东方财富",
+      "source_url": "https://quote.eastmoney.com/center/boardlist.html#boards-BK1202",
+      "event_time": "2026-09-08 14:00",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "农林牧渔延续强势，农化制品涨停8只居涨停方向首位",
+      "event_summary": "9月8日农林牧渔行业涨1.47%，涨停方向分布中农化制品8只、农产品加工4只、种植业3只居前。Wind数据显示农林牧渔60日BIAS高达+15.42%（★★★），为全市场最超买板块；亚盛集团4板、敦煌种业3板领涨农业线，短线情绪偏热需防分歧。",
+      "source_media": "东方财富",
+      "source_url": "https://quote.eastmoney.com/center/boardlist.html#boards-BK0433",
+      "event_time": "2026-09-08 14:45",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "科技成长高位回落，电子跌1.11%、电力设备跌1.14%领跌",
+      "event_summary": "9月8日昨日领涨的科技板块集体回调，电子跌1.11%、电力设备跌1.14%、计算机跌0.89%、家用电器跌0.77%，科创50跌1.52%、创业板指跌1.15%。电子60日BIAS为-10.33%、通信-7.20%，仍处60日均线下方超跌区域，反弹后遭遇获利回吐。",
+      "source_media": "Wind",
+      "source_url": "https://quote.eastmoney.com/center/boardlist.html#boards-BK1201",
+      "event_time": "2026-09-08 15:10",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "连板梯队4-3-2-1结构完整，2板个股增至12只",
+      "event_summary": "9月8日短线接力情绪尚可，最高4板为爱仕达、亚盛集团、百大集团3只（均由昨日3板晋级）；3板3只、2板12只（较昨日9只增厚）、首板55只，连板梯队4-3-2-1结构完整，全场无跌停，封板率约95%。",
+      "source_media": "东方财富",
+      "source_url": "https://so.eastmoney.com/news/s?keyword=%E8%BF%9E%E6%9D%BF%E6%A2%AF%E9%98%9F%20%E6%B6%A8%E5%81%9C",
+      "event_time": "2026-09-08 15:20",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "COMEX黄金回落至4433美元，白银66.31美元，贵金属板块承压",
+      "event_summary": "9月8日COMEX黄金报4433.28美元/盎司跌0.97%，自高位回落；COMEX白银报66.31美元跌0.66%。贵金属板块60日BIAS为-13.58%，仍处60日均线下方超跌区域，随金价回调承压。",
+      "source_media": "华尔街见闻",
+      "source_url": "https://wallstreetcn.com/news/global",
+      "event_time": "2026-09-08 13:30",
+      "event_level": "行业级"
+    }
+  ]
+}

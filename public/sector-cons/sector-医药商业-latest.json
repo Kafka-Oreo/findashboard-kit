@@ -1,0 +1,19 @@
+{
+  "sector": "医药商业",
+  "count": 12,
+  "date": "2026-08-07",
+  "stocks": [
+    {"code": "600272", "name": "开开实业", "price": 18.35, "change": 10.03, "turnover": 12.45, "amount": 3.8},
+    {"code": "600998", "name": "九州通", "price": 12.80, "change": 5.67, "turnover": 6.78, "amount": 8.9},
+    {"code": "000963", "name": "华东医药", "price": 35.60, "change": 4.56, "turnover": 4.23, "amount": 12.5},
+    {"code": "600511", "name": "国药股份", "price": 28.90, "change": 3.89, "turnover": 3.45, "amount": 6.7},
+    {"code": "000028", "name": "国药一致", "price": 42.15, "change": 4.23, "turnover": 3.78, "amount": 7.8},
+    {"code": "601607", "name": "上海医药", "price": 22.45, "change": 3.45, "turnover": 2.98, "amount": 9.8},
+    {"code": "000423", "name": "东阿阿胶", "price": 58.30, "change": 2.89, "turnover": 2.56, "amount": 5.4},
+    {"code": "600833", "name": "第一医药", "price": 15.60, "change": 6.78, "turnover": 8.12, "amount": 2.3},
+    {"code": "002275", "name": "桂林三金", "price": 18.90, "change": 3.67, "turnover": 3.23, "amount": 3.5},
+    {"code": "600332", "name": "白云山", "price": 32.15, "change": 2.45, "turnover": 2.12, "amount": 6.8},
+    {"code": "000538", "name": "云南白药", "price": 68.90, "change": 1.89, "turnover": 1.89, "amount": 15.6},
+    {"code": "600285", "name": "羚锐制药", "price": 25.40, "change": 4.12, "turnover": 3.56, "amount": 4.2}
+  ]
+}

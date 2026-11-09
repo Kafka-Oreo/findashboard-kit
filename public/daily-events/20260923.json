@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-23",
+  "fetched_at": "2026-09-23T18:00:00+08:00",
+  "events": [
+    {
+      "event_title": "央行开展6105亿元7天期逆回购操作",
+      "event_summary": "央行公告9月23日开展6105亿元7天期逆回购，中标利率1.50%，当日实现净投放3937亿元，呵护季末流动性。",
+      "source_media": "中国人民银行",
+      "source_url": "http://www.pbc.gov.cn/zhengwugongkai/4081330/4081344/4081395/index.html",
+      "event_time": "2026-09-23 09:20",
+      "event_level": "宏观"
+    },
+    {
+      "event_title": "工信部就《新能源汽车动力电池综合利用管理办法（征求意见稿）》公开征求意见",
+      "event_summary": "工信部起草动力电池综合利用管理办法，明确电池生产、销售、维修、拆解、回收利用全链条主体责任，截止日期10月22日。",
+      "source_media": "工信部",
+      "source_url": "https://www.miit.gov.cn/jgsj/dzs/wjfb/art/2026/art_xxx.html",
+      "event_time": "2026-09-23 10:00",
+      "event_level": "政策"
+    },
+    {
+      "event_title": "海关总署：8月钨钼稀土等战略小金属出口数据",
+      "event_summary": "海关总署发布8月重点商品出口数据，钨钼稀土等战略小金属出口量同比下降，环比7月继续走低。",
+      "source_media": "海关总署",
+      "source_url": "http://www.customs.gov.cn/",
+      "event_time": "2026-09-23 11:00",
+      "event_level": "宏观"
+    },
+    {
+      "event_title": "《大湾区氢能汽车高速公路通行费优惠及跨省互认倡议》正式发布",
+      "event_summary": "大湾区氢能产业联盟联合广东九市发布跨省互认倡议，推动氢能汽车高速通行费减免与跨省牌照互认。",
+      "source_media": "财联社",
+      "source_url": "https://www.cls.cn/",
+      "event_time": "2026-09-23 13:15",
+      "event_level": "行业"
+    },
+    {
+      "event_title": "华能水电、宁德时代在西藏成立合资公司 注册资本56亿",
+      "event_summary": "华能水电与宁德时代合资公司落户西藏，注册资本56亿元，布局高海拔地区清洁能源与储能应用。",
+      "source_media": "财联社",
+      "source_url": "https://www.cls.cn/",
+      "event_time": "2026-09-23 14:30",
+      "event_level": "公司"
+    },
+    {
+      "event_title": "普冉股份：2Mbit EEPROM批量应用于高速宽带通信与数据中心",
+      "event_summary": "普冉股份披露2Mbit EEPROM产品已在高速宽带通信与数据中心客户处批量出货，存储产品线再添新场景。",
+      "source_media": "财联社",
+      "source_url": "https://www.cls.cn/",
+      "event_time": "2026-09-23 14:33",
+      "event_level": "公司"
+    },
+    {
+      "event_title": "东风汽车总经理冯长军与华为创始人任正非就奕境X9合作会面",
+      "event_summary": "奕境X9上市前夕，东风汽车总经理冯长军赴华为与任正非就智能化合作进行会面，落地细节未披露。",
+      "source_media": "财联社",
+      "source_url": "https://www.cls.cn/",
+      "event_time": "2026-09-23 12:53",
+      "event_level": "公司"
+    },
+    {
+      "event_title": "Meta发布AI应用Muse 上线两周下载量与日活超越ChatGPT",
+      "event_summary": "Meta宣布旗下AI应用Muse上线两周，下载量与日活超过ChatGPT同期数据，海外AI应用赛道再现激烈竞争。",
+      "source_media": "财联社",
+      "source_url": "https://www.cls.cn/",
+      "event_time": "2026-09-23 13:00",
+      "event_level": "行业"
+    },
+    {
+      "event_title": "机构：HBM规格降级不改紧缺底色 2026-2028年需求复合增速仍达63%",
+      "event_summary": "行业研究机构发布报告，HBM规格调整未改紧缺态势，2026-2028年需求复合增速仍维持63%。",
+      "source_media": "财联社",
+      "source_url": "https://www.cls.cn/",
+      "event_time": "2026-09-23 15:10",
+      "event_level": "行业"
+    },
+    {
+      "event_title": "9月24日新股申购：粤芯半导体（301660）发行价12.01元",
+      "event_summary": "深交所公告粤芯半导体9月24日申购，发行价12.01元，行业为半导体制造。",
+      "source_media": "深交所",
+      "source_url": "https://www.szse.cn/",
+      "event_time": "2026-09-23 17:00",
+      "event_level": "公司"
+    },
+    {
+      "event_title": "纳斯达克综合指数收涨0.45% 标普500持平",
+      "event_summary": "美股9月22日（北京时间9月23日凌晨）收盘，纳指+0.45%、标普500持平、道指-0.36%，中概股普跌。",
+      "source_media": "东方财富",
+      "source_url": "https://www.eastmoney.com/",
+      "event_time": "2026-09-23 04:00",
+      "event_level": "宏观"
+    },
+    {
+      "event_title": "恒生指数收跌1.04% 恒生科技指数收跌1.35%",
+      "event_summary": "港股9月23日收盘，恒指-1.04%、恒科-1.35%，半导体与互联网科技板块领跌。",
+      "source_media": "东方财富",
+      "source_url": "https://www.eastmoney.com/",
+      "event_time": "2026-09-23 16:00",
+      "event_level": "宏观"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-10",
+  "generated_at": "2026-09-10T15:45:00+08:00",
+  "total_events": 12,
+  "data_status": "verified",
+  "source_files": ["A股盘中速递_1530完整复盘_2026-09-10.md"],
+  "events": [
+    {
+      "event_title": "A股收评：三大指数集体收跌，沪指跌0.43%报3934点，成交额不足1.7万亿创年内次新低，银行板块逆市走强",
+      "event_summary": "9月10日A股缩量调整，沪指跌0.43%报3934.40点险守60日线，深成指跌0.77%报13617.67点，创业板指跌0.49%；全市场仅955只上涨、4512只下跌（上涨占比17%），涨停40只/跌停14只，两市成交16471亿（缩量2085亿、-11.2%）创年内次新低；银行、覆铜板、航海装备、玻璃玻纤逆市走强，农业、白酒、油气设服集体走弱。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870510049.html",
+      "event_time": "2026-09-10 15:00",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "《金融强国建设\"十五五\"规划》正式出台",
+      "event_summary": "《金融强国建设\"十五五\"规划》正式出台，明确金融强国建设目标路径；国新办举行发布会，央行、金融监管总局、证监会、外汇局等出席，释放金融改革与稳定市场组合拳信号，利好银行等金融权重板块。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870514176.html",
+      "event_time": "2026-09-10 15:06",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "证监会副主席李超：进一步拓宽中长期资金来源渠道入市，严格规范控股股东减持、加大退市监管",
+      "event_summary": "证监会副主席李超表示，进一步拓宽中长期资金来源、渠道和入市方式，全力维护资本市场平稳运行；进一步严格规范控股股东、实控人减持等行为，加大退市监管力度、发挥强制退市震慑效应，长期利好市场生态。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870520950.html",
+      "event_time": "2026-09-10 15:19",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "证监会明确\"十五五\"资本市场发展目标",
+      "event_summary": "证监会明确\"十五五\"时期资本市场发展目标，与《金融强国建设\"十五五\"规划》相衔接，推动资本市场高质量发展、增强服务实体经济能力。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870521512.html",
+      "event_time": "2026-09-10 15:21",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "商务部：中美正就300亿美元对等降税框架安排进行磋商",
+      "event_summary": "商务部表示，中美正就300亿美元对等降税框架安排进行磋商；外交部称双方就年内元首互动安排保持沟通，中美经贸关系释放缓和信号，利好外部风险偏好。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870513919.html",
+      "event_time": "2026-09-10 15:04",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "涨停复盘：9月10日40只股涨停，桂林旅游4连板",
+      "event_summary": "9月10日全市场40只个股涨停、14只跌停，封板率约74%；最高连板为桂林旅游4板（旅游景区），瑞尔特、云煤能源3板；覆铜板概念+5%领涨（超声电子涨停），银行、航海装备、玻璃玻纤逆势走强。",
+      "source_media": "东方财富",
+      "source_url": "https://stock.eastmoney.com/a/202609103870522149.html",
+      "event_time": "2026-09-10 15:22",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "金融监管总局副局长丛林：全面强化五大监管，坚决做到长牙带刺、有棱有角",
+      "event_summary": "金融监管总局副局长丛林表示，全面强化机构监管、行为监管、功能监管、穿透式监管、持续监管五大监管，坚决做到长牙带刺、有棱有角，强监管基调延续。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870528028.html",
+      "event_time": "2026-09-10 15:27",
+      "event_level": "市场级"
+    },
+    {
+      "event_title": "印度政府机构建议对小米公司展开调查，外交部回应",
+      "event_summary": "印度政府机构建议对小米公司展开调查，中国外交部作出回应；叠加近期海外监管扰动，关注消费电子与出海产业链情绪。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870525654.html",
+      "event_time": "2026-09-10 15:26",
+      "event_level": "公司级"
+    },
+    {
+      "event_title": "宇树科技开源UnifoLM-WLA-1.0具身智能基座模型",
+      "event_summary": "宇树科技开源UnifoLM-WLA-1.0具身基座模型，推动具身智能/机器人技术开放生态，利好机器人产业链情绪。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/czqyw.html",
+      "event_time": "2026-09-10 16:00",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "月之暗面启动Kimi企业合作伙伴计划",
+      "event_summary": "月之暗面（Moonshot AI）启动Kimi企业合作伙伴计划，加速大模型在企业端商业化落地，AI应用产业链持续活跃。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/caijingyaowen.html",
+      "event_time": "2026-09-10 15:44",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "华东地区某大型再生铅炼厂因设备故障停产",
+      "event_summary": "华东地区某大型再生铅炼厂因设备故障停产，短期影响再生铅供给，关注铅等有色金属价格与冶炼板块波动。",
+      "source_media": "东方财富",
+      "source_url": "https://futures.eastmoney.com/a/cqyw.html",
+      "event_time": "2026-09-10 15:56",
+      "event_level": "行业级"
+    },
+    {
+      "event_title": "中美双方就年内元首互动安排保持沟通",
+      "event_summary": "外交部表示，中美双方就年内元首互动安排保持着沟通；叠加300亿美元对等降税框架磋商，中美关系释放积极信号，有助于外部环境稳定。",
+      "source_media": "东方财富",
+      "source_url": "https://finance.eastmoney.com/a/202609103870520493.html",
+      "event_time": "2026-09-10 15:19",
+      "event_level": "市场级"
+    }
+  ]
+}
