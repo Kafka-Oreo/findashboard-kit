@@ -42,6 +42,36 @@ pnpm start      # 生产运行
 报告数据的完整结构定义见 [`src/lib/types.ts`](src/lib/types.ts)（`ReportData` 接口，
 约 60 个字段全部有中文注释）。
 
+## 情绪温度：四因子自动计算
+
+温度计分数**不再手写**，由 [`src/lib/temperature.ts`](src/lib/temperature.ts) 从当日市场数据
+实时算出，四个因子加权，输出区间 **-80 ~ +100**：
+
+| 因子 | 公式 | 量程 | 满分条件 |
+|------|------|------|----------|
+| 涨跌比 | `(上涨 - 下跌) / (上涨 + 下跌) × 50` | -50 ~ +50 | 全市场上涨/下跌 |
+| 涨停家数 | `min(涨停 / 3, 30)` | 0 ~ +30 | 涨停 ≥ 90 家 |
+| 跌停家数 | `-min(跌停 / 2, 30)` | -30 ~ 0 | 跌停 ≥ 60 家 |
+| 最高连板 | `min(连板 × 3, 20)` | 0 ~ +20 | 最高连板 ≥ 7 板 |
+
+数据来源：`summary`（`advance` / `decline` / `limitUp` / `limitDown`）+ `ladder` 的最大 `tier`。
+等级按 **+75 / +50 / +25 / 0 / -25** 六档划分（过热 / 活跃 / 正常 / 偏冷 / 次冰 / 深冰）。
+
+```ts
+import { calculateTemperature, resolveTemperature } from '@/lib/temperature';
+
+// 直接算
+calculateTemperature({ limitUp: 51, limitDown: 15, upCount: 1891, downCount: 3564, maxBoard: 4 });
+// → { score: 6, breakdown: { ratio: -15.3, limitUp: 17, limitDown: -7.5, board: 12 }, level: '偏冷', ... }
+
+// 或从一份日报里解析（summary 缺失时回退到手填值）
+const temperature = resolveTemperature(report);
+```
+
+- 所有阈值集中在 `TEMPERATURE_WEIGHTS`，调参只改这一处。
+- 日报里的 `temperature.note` 可写人工解读（行业、指数、量能等），会追加在自动结论之后；
+  需要完全手写文案时用 `temperature.tipHtml` 覆盖。
+
 ## 数据架构：双模式
 
 ### 模式 A：静态 JSON（默认，零依赖）

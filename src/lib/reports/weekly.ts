@@ -1,4 +1,5 @@
 import type { ReportData, LadderStep, SignalData, AnalystView } from '../types';
+import { resolveTemperature } from '../temperature';
 import { reports, availableDates } from './index';
 
 // Get ISO week number
@@ -35,7 +36,7 @@ export function generateWeeklyReport(weekStart: string): ReportData | null {
   const lastReport = weekReports[weekReports.length - 1];
 
   // Calculate average temperature score
-  const avgScore = Math.round(weekReports.reduce((sum, r) => sum + r.temperature.score, 0) / weekReports.length);
+  const avgScore = Math.round(weekReports.reduce((sum, r) => sum + resolveTemperature(r).score, 0) / weekReports.length);
 
   // Aggregate ladder - combine all unique items
   const ladderMap = new Map<string, LadderStep>();
@@ -60,7 +61,7 @@ export function generateWeeklyReport(weekStart: string): ReportData | null {
   };
 
   // Generate weekly summary
-  const upDays = weekReports.filter(r => r.temperature.score >= 50).length;
+  const upDays = weekReports.filter(r => resolveTemperature(r).score >= 50).length;
   const weeklySummary = `本周共${weekReports.length}个交易日，${upDays}天情绪偏暖，${weekReports.length - upDays}天偏冷。` +
     `市场情绪均值${avgScore}分，较上周${avgScore > 50 ? '升温' : '降温'}。`;
 

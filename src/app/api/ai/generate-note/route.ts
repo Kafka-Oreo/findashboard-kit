@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getReportByDate } from '@/lib/reports';
 import type { ReportData } from '@/lib/types';
+import { resolveTemperature } from '@/lib/temperature';
 
 export async function POST(request: NextRequest) {
   try {
@@ -231,9 +232,9 @@ function generateMaTeacherNote(report: ReportData): string {
 }
 
 function generateQianTeacherNote(report: ReportData): string {
-  const { dateLabel, mainTitle, temperature, charts, subtitle, sectorDistribution } = report;
+  const { dateLabel, mainTitle, charts, subtitle, sectorDistribution } = report;
   
-  const tempScore = temperature.score;
+  const tempScore = resolveTemperature(report).score;
   
   // 从 charts.limits 获取涨停跌停数据
   const limitsData = charts?.limits;

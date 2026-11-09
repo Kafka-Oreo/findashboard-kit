@@ -6,6 +6,7 @@ import { ThermoChart, LimitsChart, LadderChart } from './charts';
 import { LadderSection } from './ladder-section';
 import { getCatalystUrl, isGenericHomepage } from '@/lib/utils';
 import { quotePools } from '@/lib/quote-corpus';
+import { resolveTemperature } from '@/lib/temperature';
 
 interface Props {
   data: ReportData;
@@ -16,7 +17,9 @@ interface Props {
 }
 
 export function PageOverview({ data, marketData, showAll, section, events }: Props) {
-  const tempPercent = ((data.temperature.score + 100) / 200) * 100;
+  // 情绪温度：由 summary（涨跌停/涨跌家数）+ ladder（最高连板）自动计算
+  const temperature = resolveTemperature(data);
+  const tempPercent = ((temperature.score + 100) / 200) * 100;
   const [stockModalOpen, setStockModalOpen] = useState(false);
   const [stockModalName, setStockModalName] = useState("");
   const [stockData, setStockData] = useState<any>(null);
@@ -459,7 +462,7 @@ export function PageOverview({ data, marketData, showAll, section, events }: Pro
                 >
                   {/* 温度数值显示 */}
                   <span className="absolute left-full ml-2 -translate-y-1/2 text-[15px] font-extrabold text-primary whitespace-nowrap font-data">
-                    {data.temperature.label}
+                    {temperature.label}
                   </span>
                 </div>
               </div>
@@ -477,15 +480,15 @@ export function PageOverview({ data, marketData, showAll, section, events }: Pro
             {/* 市场解读 */}
             <div
               className={`rounded-xl p-4 flex gap-3 ${
-                data.temperature.tipClass === 'tip-warm'
+                temperature.tipClass === 'tip-warm'
                   ? 'bg-gradient-to-br from-amber-50 to-orange-50 dark:from-warning/20 dark:to-background border border-amber-200/50 dark:border-warning/25'
                   : 'bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-primary/20 dark:to-background border border-blue-200/50 dark:border-primary/25'
               }`}
             >
-              <div className="text-2xl shrink-0 leading-snug">{data.temperature.tipIcon}</div>
+              <div className="text-2xl shrink-0 leading-snug">{temperature.tipIcon}</div>
               <div
                 className="text-[13px] text-text-primary dark:text-text-secondary leading-relaxed [&_b]:text-warning dark:[&_b]:text-text-primary [&_b]:font-semibold"
-                dangerouslySetInnerHTML={{ __html: data.temperature.tipHtml }}
+                dangerouslySetInnerHTML={{ __html: temperature.tipHtml }}
               />
             </div>
           </div>

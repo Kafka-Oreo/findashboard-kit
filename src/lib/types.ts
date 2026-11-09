@@ -195,12 +195,17 @@ export interface ReportData {
   ladder: LadderStep[];
   sectorDistribution?: SectorDistribution;
   riskWarnings?: { title: string; items: string[]; warning?: boolean }[];
-  temperature: {
-    score: number;
-    label: string;
-    tipClass: 'tip-frozen' | 'tip-cold' | 'tip-cool' | 'tip-normal' | 'tip-warm' | 'tip-hot';
-    tipIcon: string;
-    tipHtml: string;
+  /** 情绪温度（可选）。缺省时由 summary + ladder 经四因子公式自动计算，
+   *  见 src/lib/temperature.ts；此处仅用于旧数据兼容或人工覆盖文案。 */
+  temperature?: {
+    score?: number;
+    label?: string;
+    tipClass?: 'tip-frozen' | 'tip-cold' | 'tip-cool' | 'tip-normal' | 'tip-warm' | 'tip-hot';
+    tipIcon?: string;
+    /** 完全手写的解读文案（优先级最高，将跳过自动生成） */
+    tipHtml?: string;
+    /** 人工补充解读，自动计算的结论之后追加展示 */
+    note?: string;
   };
   scores: {
     emotion: { value: string; color: string; desc: string };
