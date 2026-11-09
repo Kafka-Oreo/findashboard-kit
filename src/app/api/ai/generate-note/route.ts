@@ -27,10 +27,10 @@ export async function POST(request: NextRequest) {
     // 根据老师类型生成不同风格的笔记
     let noteContent = '';
     
-    if (teacher === 'tanxiaojian228') {
+    if (teacher === 'ma') {
       // 马老师风格：短线交易、情绪周期、分歧修复
       noteContent = generateMaTeacherNote(report);
-    } else if (teacher === 'qianduoduo') {
+    } else if (teacher === 'qian') {
       // 钱老师风格：产业链分析、板块轮动、高低切换
       noteContent = generateQianTeacherNote(report);
     } else {
@@ -106,7 +106,7 @@ function generateMaTeacherNote(report: ReportData): string {
   // 主线板块固定排序
   const topSectors = sectorDistribution.sectors.join('、');
   
-  return `# 马老师谈笑间 228 | ${dateLabel.replace('年', '.').replace('月', '.').replace('日', '')}收盘笔记：${mainTitle.replace(/\n/g, '，')}
+  return `# 马老师 | ${dateLabel.replace('年', '.').replace('月', '.').replace('日', '')}收盘笔记：${mainTitle.replace(/\n/g, '，')}
 
 **市场温度：从冰点修复到偏暖区域，短线情绪回暖**
 

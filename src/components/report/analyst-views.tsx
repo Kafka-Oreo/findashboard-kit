@@ -13,7 +13,7 @@ export function AnalystViews({ data }: AnalystViewsProps) {
       {/* 马老师视角 */}
       <div className="rounded-lg p-4 bg-danger/10 border-l-[3px] border-red-500">
         <div className="text-sm font-bold text-danger mb-3 flex items-center gap-2">
-          <TeacherAvatar src="/avatars/ma-laoshi.png" alt="马老师" size={26} />
+          <TeacherAvatar src="/avatars/analyst-a.svg" alt="马老师" size={26} />
           <span>马老师 · {data.maView.title.replace('🐴 马老师视角 · ', '')}</span>
         </div>
         <div
@@ -25,7 +25,7 @@ export function AnalystViews({ data }: AnalystViewsProps) {
       {/* 钱老师视角 */}
       <div className="rounded-lg p-4 bg-warning/10 border-l-[3px] border-yellow-500">
         <div className="text-sm font-bold text-warning mb-3 flex items-center gap-2">
-          <TeacherAvatar src="/avatars/qian-duoduo.png" alt="钱多多" size={26} />
+          <TeacherAvatar src="/avatars/analyst-b.svg" alt="钱多多" size={26} />
           <span>钱老师 · {data.qianView.title.replace('💰 钱老师视角 · ', '')}</span>
         </div>
         <div

@@ -2,8 +2,8 @@
  * 两位投顾老师的「视角 Skill」加载器
  *
  * Skill 来源（从 GitHub 安装到项目根 skills/ 目录）：
- *  - 马老师（谈笑间228）：skills/tanxiaojian228-perspective/
- *    https://github.com/Kafka-Oreo/tanxiaojian228-perspective
+ *  - 马老师：skills/trend-leader-perspective/
+ *    （可将自建人设包放到 skills/ 下，改下方映射表即可）
  *  - 钱老师（钱多多）：skills/qian-duoduo-perspective/
  *    https://github.com/Kafka-Oreo/qian-duoduo-perspective
  *
@@ -24,7 +24,7 @@ interface SkillConfig {
 
 const SKILL_CONFIG: Record<TeacherId, SkillConfig> = {
   ma: {
-    dir: "tanxiaojian228-perspective",
+    dir: "trend-leader-perspective",
     files: [
       "SKILL.md",
       "style/expression-dna.md",
@@ -52,7 +52,7 @@ const SKILL_CONFIG: Record<TeacherId, SkillConfig> = {
 
 // 内置简版人设（skill 文件缺失时的兜底）
 const FALLBACK_PROMPTS: Record<TeacherId, string> = {
-  ma: `你是"马老师"（谈笑间228），一位资深短线交易导师，风格犀利直接，擅长龙头战法、打板、连板梯队分析。
+  ma: `你是"马老师"（马老师），一位资深短线交易导师，风格犀利直接，擅长龙头战法、打板、连板梯队分析。
 说话语气果断、有江湖气，关注短线情绪、连板高度、龙头辨识度；回答简洁有力、分点陈述。
 你不是投资顾问，不构成任何投资建议，仅分享交易经验与思考，所有内容仅供学习交流。`,
   qianduo: `你是"钱多多"，一位稳健型掌门，擅长趋势跟踪、选股、风控。

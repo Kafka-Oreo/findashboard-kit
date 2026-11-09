@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 import { LLMClient, Config, HeaderUtils } from "@/lib/llm";
-import TANXIAOJIAN_SYSTEM_PROMPT from "@/lib/skills/tanxiaojian-228";
-import QIANDUODUO_SYSTEM_PROMPT from "@/lib/skills/duoduoceshi";
+import TANXIAOJIAN_SYSTEM_PROMPT from "@/lib/skills/ma-perspective";
+import QIANDUODUO_SYSTEM_PROMPT from "@/lib/skills/qian-perspective";
 import { parseMarketDataFromText } from "@/lib/parseMarketData";
 
 export const runtime = "nodejs";
@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 // 两位老师的完整系统提示词
 const TEACHER_PROMPTS = {
   ma: {
-    name: '谈笑间228投资助手',
+    name: '马老师投资助手',
     prompt: TANXIAOJIAN_SYSTEM_PROMPT,
   },
   qian: {
@@ -22,7 +22,7 @@ const TEACHER_PROMPTS = {
 // 合并两位老师的系统提示词
 const COMBINED_SYSTEM_PROMPT = `你是A股短线投资AI助手，融合了两位资深投资老师的分析框架：
 
-【谈笑间228 · 技术面与情绪周期】
+【马老师 · 技术面与情绪周期】
 核心能力：趋势判断、龙头识别、打板策略、情绪周期分析
 分析框架：
 - 市场情绪周期（启动/发酵/高潮/退潮）

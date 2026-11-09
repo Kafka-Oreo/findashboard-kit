@@ -14,14 +14,14 @@ export default function AINotePage() {
   const [error, setError] = useState<string>('');
 
   const teacherInfo = {
-    tanxiaojian228: {
+    ma: {
       name: '马老师',
-      title: '谈笑间 228',
+      title: '马老师',
       color: '#ef4444',
       bgColor: 'rgba(239, 68, 68, 0.1)',
       borderColor: 'rgba(239, 68, 68, 0.3)'
     },
-    qianduoduo: {
+    qian: {
       name: '钱老师',
       title: '钱多多',
       color: '#f59e0b',
@@ -30,7 +30,7 @@ export default function AINotePage() {
     }
   };
 
-  const info = teacherInfo[teacher as keyof typeof teacherInfo] || teacherInfo.tanxiaojian228;
+  const info = teacherInfo[teacher as keyof typeof teacherInfo] || teacherInfo.ma;
 
   useEffect(() => {
     generateNote();

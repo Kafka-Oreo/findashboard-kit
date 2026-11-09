@@ -1,22 +1,29 @@
 /**
  * 市场情绪温度计算
  * ------------------------------------------------------------------
- * 四因子加权打分，输出 -80 ~ +100 的温度分数：
+ * 四因子加权打分，输出 -75 ~ +95 的温度分数：
  *
- *   1. 涨跌比  (-50 ~ +50)  权重最大，反映市场广度
- *      ratioScore = (upCount - downCount) / (upCount + downCount) * 50
+ *   1. 涨跌比  (-45 ~ +45)  权重最大，反映市场广度
+ *      ratioScore = (upCount - downCount) / (upCount + downCount) * 45
  *
- *   2. 涨停家数 (0 ~ +30)  每 3 家涨停 +1 分，90 家封顶
- *      limitUpScore = min(limitUp / 3, 30)
+ *   2. 涨停家数 (0 ~ +30)  每 2 家涨停 +1 分，60 家封顶
+ *      limitUpScore = min(limitUp / 2, 30)
  *
  *   3. 跌停家数 (-30 ~ 0)  每 2 家跌停 -1 分，60 家封顶
  *      limitDownScore = -min(limitDown / 2, 30)
  *
- *   4. 最高连板 (0 ~ +20)  每 1 板 +3 分，7 板封顶
- *      boardScore = min(maxBoard * 3, 20)
+ *   4. 最高连板 (0 ~ +20)  每 1 板 +4 分，5 板封顶
+ *      boardScore = min(maxBoard * 4, 20)
  *
- * 理论最大 +100（全市场上涨 + 涨停≥90 + 连板≥7），
- * 理论最小  -80（全市场下跌 + 跌停≥60，连板为 0 不扣分）。
+ * 理论最大 +95（全市场上涨 + 涨停≥60 + 连板≥5），
+ * 理论最小 -75（全市场下跌 + 跌停≥60，连板为 0 不扣分）。
+ *
+ * 参数说明（v1.1 校准）：
+ * - 涨跌比权重 50→45：A 股涨跌家数天然偏正态，极少出现全体同向，
+ *   原 ±50 让中等分化日吃掉过多分值。
+ * - 涨停系数 3→2：原口径需 90 家才封顶，把常态的 40~60 家压制到 15 分上下；
+ *   新口径 60 家即封顶，涨停强度能被如实反映。
+ * - 连板系数 3→4：连板高度是情绪最灵敏的指标，原口径 7 板才封顶过于苛刻。
  *
  * 全部参数集中在 TEMPERATURE_WEIGHTS，需要调参只改这一处。
  */
@@ -24,18 +31,18 @@
 import type { LadderStep, ReportData } from './types';
 
 export const TEMPERATURE_WEIGHTS = {
-  /** 涨跌比满分量程（±） */
-  ratioMax: 50,
-  /** 涨停得分上限，以及每多少家涨停得 1 分 */
+  /** 涨跌比满分量程（±）—— 越大越看重市场广度 */
+  ratioMax: 45,
+  /** 涨停得分上限，以及每多少家涨停得 1 分（2 家 1 分，60 家封顶） */
   limitUpMax: 30,
-  limitUpPer: 3,
-  /** 跌停扣分上限，以及每多少家跌停扣 1 分 */
+  limitUpPer: 2,
+  /** 跌停扣分上限，以及每多少家跌停扣 1 分（2 家 1 分，60 家封顶） */
   limitDownMax: 30,
   limitDownPer: 2,
-  /** 连板得分上限，以及每 1 连板得几分 */
+  /** 连板得分上限，以及每 1 连板得几分（4 分/板，5 板封顶） */
   boardMax: 20,
-  boardPer: 3,
-  /** 最终分数区间 */
+  boardPer: 4,
+  /** 最终分数夹取区间（略宽于理论量程，防止异常数据溢出） */
   scoreMin: -80,
   scoreMax: 100,
 } as const;
@@ -168,7 +175,7 @@ export function getTemperatureLevel(score: number): {
  *
  * @example
  * calculateTemperature({ limitUp: 51, limitDown: 15, upCount: 1891, downCount: 3564, maxBoard: 4 })
- * // → { score: 6, breakdown: { ratio: -15.3, limitUp: 17, limitDown: -7.5, board: 12 }, level: '偏冷', ... }
+ * // → { score: 20, breakdown: { ratio: -13.8, limitUp: 25.5, limitDown: -7.5, board: 16 }, level: '偏冷', ... }
  */
 export function calculateTemperature(input: TemperatureInput): TemperatureResult {
   const limitUp = num(input.limitUp);
@@ -179,7 +186,7 @@ export function calculateTemperature(input: TemperatureInput): TemperatureResult
 
   const w = TEMPERATURE_WEIGHTS;
 
-  // 1. 涨跌比得分 -50 ~ +50，涨跌家数全为 0 时记 0 分
+  // 1. 涨跌比得分 -45 ~ +45，涨跌家数全为 0 时记 0 分
   const total = upCount + downCount;
   const ratioRaw = total > 0 ? ((upCount - downCount) / total) * w.ratioMax : 0;
   const ratio = round1(clamp(ratioRaw, -w.ratioMax, w.ratioMax));
@@ -190,8 +197,8 @@ export function calculateTemperature(input: TemperatureInput): TemperatureResult
   // 3. 跌停扣分 -30 ~ 0
   const limitDownScore = round1(-Math.min(limitDown / w.limitDownPer, w.limitDownMax));
 
-  // 4. 连板得分 0 ~ +20（首板不算高度，故按 (maxBoard - 1) 或不减？）
-  //    口径：直接使用最高连板数，1 板 = 3 分，与「连板高度越高情绪越热」一致
+  // 4. 连板得分 0 ~ +20（1 板 = 4 分，5 板封顶）
+  //    口径：直接使用最高连板数，与「连板高度越高情绪越热」一致
   const boardScore = round1(Math.min(maxBoard * w.boardPer, w.boardMax));
 
   // 5. 汇总并夹取到区间

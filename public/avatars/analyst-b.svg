@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="稳健派分析师">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="64" fill="url(#b)"/>
+  <path d="M64 26 L98 42 V66 C98 86 83 99 64 106 C45 99 30 86 30 66 V42 Z" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round" opacity="0.95"/>
+  <path d="M46 68 L58 80 L84 52" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
